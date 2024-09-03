@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Destinos Disponibles</title>
+    <style>
+        body {
+            background: linear-gradient(to right, rgba(135, 206, 250, 0.8), rgba(70, 130, 180, 0.8)), 
+                        url('your-blurred-background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #555;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            margin: 20px auto;
+            max-width: 900px;
+        }
+        header {
+            background-color: #d3d3d3; /* Fondo gris */
+            color: #002366; /* Letras en azul marino */
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            position: relative;
+        }
+        header img.logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+        }
+        nav {
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #1e90ff; /* Color azul */
+            text-decoration: none;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: #fff;
+            background-color: #1e90ff;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+        .content {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            width: 100%;
+        }
+        .destinations {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .destination-item {
+            flex: 0 0 48%; /* Ajusta el ancho de las tarjetas para que haya dos por fila */
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .destination-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .destination-item h2 {
+            color: #1e90ff; /* Color azul */
+            margin-top: 10px;
+        }
+        .destination-item p {
+            margin-top: 10px;
+            color: #555;
+        }
+        .footer {
+            background-color: #1e90ff; /* Color azul */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="img/je.png"alt="Logo" class="logo"> <!-- Logo añadido aquí -->
+            <h1>Destinos Disponibles</h1>
+        </header>
+        <nav>
+            <a href="principal.html">Inicio</a>
+            <a href="borrar.html">Blog de Noticias</a>
+            <a href="modifi.html">Destinos Disponibles</a>
+            <a href="grup.html">Reservar destino</a>
+            <a href="gale.html">Galería</a>
+            <a href="contact.html">Contáctanos</a>
+        </nav>
+        <div class="content">
+            <h2>Destinos Disponibles</h2>
+            <div class="destinations">
+                <div class="destination-item">
+                    <img src="img/espa.jpeg" alt="España">
+                    <h2>España</h2>
+                    <p>Precio: $1,000</p>
+                    <p>Disponibilidad: Disponible</p>
+                </div>
+                <div class="destination-item">
+                    <img src="img/guate.jpeg" alt="Guatemala">
+                    <h2>Guatemala</h2>
+                    <p>Precio: $800</p>
+                    <p>Disponibilidad: Disponible</p>
+                </div>
+                <div class="destination-item">
+                    <img src="img/salvador.jpeg" alt="El Salvador">
+                    <h2>El Salvador</h2>
+                    <p>Precio: $700</p>
+                    <p>Disponibilidad: Disponible</p>
+                </div>
+                <div class="destination-item">
+                    <img src="img/costa.jpeg" alt="Costa Rica">
+                    <h2>Costa Rica</h2>
+                    <p>Precio: $900</p>
+                    <p>Disponibilidad: Disponible</p>
+                </div>
+                <div class="destination-item">
+                    <img src="img/esta.jpeg" alt="Estados Unidos">
+                    <h2>Estados Unidos</h2>
+                    <p>Precio: $1,200</p>
+                    <p>Disponibilidad: Disponible</p>
+                </div>
+                <div class="destination-item">
+                    <img src="img/pana.jpeg" alt="Panamá">
+                    <h2>Panamá</h2>
+                    <p>Precio: $950</p>
+                    <p>Disponibilidad: Disponible</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            &copy; 2024 reservas. Todos los derechos reservados.
+        </div>
+    </div>
+</body>
+</html>
